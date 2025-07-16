@@ -1,0 +1,34 @@
+/* ExamListPage.css */
+.exam-list {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.exam-item {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.exam-item h3 {
+  margin: 0 0 8px;
+}
+
+.exam-item button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.exam-item button:hover {
+  background-color: #0056b3;
+}
