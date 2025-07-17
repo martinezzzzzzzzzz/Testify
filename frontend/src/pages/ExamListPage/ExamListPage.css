@@ -1,34 +1,88 @@
-/* ExamListPage.css */
-.exam-list {
-  max-width: 600px;
+.exam-list-container {
+  max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
-  border: 1px solid #ddd;
+}
+
+.exam-list-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.exam-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.exam-card {
+  background: #ffffff;
   border-radius: 8px;
-  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.exam-item {
-  padding: 15px;
+.exam-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.exam-card h3 {
+  margin: 0 0 10px;
+  color: #007bff;
+  font-size: 1.3rem;
+}
+
+.exam-card p {
+  color: #555;
   margin-bottom: 15px;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  font-size: 0.95rem;
 }
 
-.exam-item h3 {
-  margin: 0 0 8px;
-}
-
-.exam-item button {
-  background-color: #007bff;
+.exam-link {
+  display: inline-block;
+  text-decoration: none;
   color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
+  background: #007bff;
+  padding: 8px 14px;
   border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
 }
 
-.exam-item button:hover {
-  background-color: #0056b3;
+.exam-link:hover {
+  background: #0056b3;
+}
+
+.no-exams-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.add-exam-container {
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.add-exam-button {
+  display: inline-block;
+  background: linear-gradient(to right, #1e90ff, #007bff);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.add-exam-button:hover {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.5);
 }

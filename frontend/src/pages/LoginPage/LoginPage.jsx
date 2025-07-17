@@ -21,6 +21,10 @@ const LoginPage = () => {
       );
 
       console.log('✅ Login exitoso:', res.data);
+
+      // ✅ GUARDA EL USUARIO EN LOCALSTORAGE
+      localStorage.setItem("user", JSON.stringify(res.data.user));
+
       navigate('/exams');
     } catch (err) {
       console.error('❌ Error en login:', err);

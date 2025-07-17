@@ -1,0 +1,57 @@
+.exam-create-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.exam-create-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.exam-create-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.exam-create-container input,
+.exam-create-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-question-button,
+.submit-exam-button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-question-button {
+  background: #2196f3;
+  margin-right: 10px;
+}
+
+.add-question-button:hover,
+.submit-exam-button:hover {
+  opacity: 0.8;
+}
+
+.question-block {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
