@@ -1,0 +1,89 @@
+.profile-wrapper {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: #111827;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #3b82f6;
+  object-fit: cover;
+}
+
+.profile-upload-text {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+.upload-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #2563eb;
+}
+
+.profile-section {
+  border-top: 1px solid #1f2937;
+  padding: 16px 0;
+}
+
+.profile-section label {
+  display: block;
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+.section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-content span {
+  font-size: 16px;
+}
+
+.section-content button {
+  background-color: #1f2937;
+  color: #f3f4f6;
+  border: 1px solid #374151;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.section-content button:hover {
+  background-color: #374151;
+}

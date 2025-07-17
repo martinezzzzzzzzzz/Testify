@@ -4,7 +4,9 @@ import LoginPage from "./pages/LoginPage/LoginPage.jsx";
 import ExamListPage from "./pages/ExamListPage/ExamListPage.jsx";
 import ExamDetailPage from "./pages/ExamDetailPage/ExamDetailPage.jsx";
 import AnswerReviewPage from "./pages/AnswerReviewPage/AnswerReviewPage.jsx";
-import ExamCreatePage from './pages/ExamCreatePage/ExamCreatePage';
+import ExamCreatePage from "./pages/ExamCreatePage/ExamCreatePage.jsx";
+import RegisterPage from "./pages/RegisterPage/RegisterPage.jsx";
+import ProfilePage from "./pages/ProfilePage/ProfilePage.jsx"; // ✅ Importación del perfil
 import Layout from "./components/Layout/Layout.jsx";
 import './assets/global.css';
 
@@ -13,6 +15,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route
           path="/exams"
           element={
@@ -42,6 +45,14 @@ function App() {
           element={
             <Layout>
               <AnswerReviewPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <Layout>
+              <ProfilePage />
             </Layout>
           }
         />
